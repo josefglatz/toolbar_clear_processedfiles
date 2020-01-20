@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+    <file source-language="en" date="2020-01-20T14:58:54+01:00">
+        <body>
+            <trans-unit id="clearcacheaction.clear.processedfiles.title">
+                <source>Clear all processed files</source>
+            </trans-unit>
+            <trans-unit id="clearcacheaction.clear.processedfiles.description">
+                <source>Truncate sys_file_processedfile table and delete physical files of local storages.</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
