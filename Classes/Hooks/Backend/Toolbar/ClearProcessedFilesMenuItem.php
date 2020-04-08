@@ -7,6 +7,7 @@ use TYPO3\CMS\Backend\Routing\Exception\RouteNotFoundException;
 use TYPO3\CMS\Backend\Routing\UriBuilder;
 use TYPO3\CMS\Backend\Toolbar\ClearCacheActionsHookInterface;
 use TYPO3\CMS\Core\Authentication\BackendUserAuthentication;
+use TYPO3\CMS\Core\Core\Environment;
 use TYPO3\CMS\Core\Http\Response;
 use TYPO3\CMS\Core\Resource\ProcessedFileRepository;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
@@ -73,9 +74,9 @@ class ClearProcessedFilesMenuItem implements ClearCacheActionsHookInterface
      */
     protected function applicationContextIsDevelopment(): bool
     {
-        return GeneralUtility::getApplicationContext()->isDevelopment()
-            || (GeneralUtility::getApplicationContext()->isProduction()
-                && GeneralUtility::getApplicationContext()->__toString() === 'Production/Dev');
+        return Environment::getContext()->isDevelopment()
+            || (Environment::getContext()->isProduction()
+                && (string)Environment::getContext() === 'Production/Dev');
     }
 
     /**
