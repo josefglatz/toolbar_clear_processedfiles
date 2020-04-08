@@ -2,7 +2,7 @@
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Clear processed files TYPO3 backend toolbar button',
     'description' => 'TYPO3 backend toolbar button to clear processed files on local storages',
-    'version' => '1.0.0',
+    'version' => '1.0.2',
     'state' => 'stable',
     'author' => 'Josef Glatz',
     'author_email' => 'josefglatz@gmailcom',
