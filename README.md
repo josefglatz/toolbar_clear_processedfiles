@@ -24,6 +24,18 @@ adminstrator and
 * or the UserTSConfig for the administrator includes
   `options.clearCache.processedfiles = 1`
 
+
+---
+
+## Use cases
+
+* You're changing from ImageMagick to GraphicsMagick for any reason or just for testing
+* You're developing cache clearing features and you need a quick way to clear processed files before doing another testrun locally
+* You're just lazy and don't want to open the system tools all the time
+* You're experimenting with the `GFX/jpeg_quality`. And yes it totally makes sense to play with the value even if every photographer know that value `86` is somehow a good value between big file size and quality.
+
+**All those use cases are or at least were my use cases when working on TYPO3 projects as developer/integrator/sysadmin**
+
 ---
 
 ## Development
